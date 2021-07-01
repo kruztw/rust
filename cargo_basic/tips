@@ -1,0 +1,16 @@
+// https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
+
+cargo new <project_name>
+cd <project_name>
+vim src/main.rc
+
+cargo build
+./target/debug/<project_name>
+
+or
+
+cargo run
+
+
+cargo clean
+
