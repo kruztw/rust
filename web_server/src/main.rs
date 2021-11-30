@@ -46,7 +46,7 @@ async fn view(req: Request<State>) -> tide::Result {
                     {}\
                 </div>\
             ", content)).build(),
-        None => Response::builder(404).build()
+        None => Response::builder(200).content_type("text/html").body(format!("<h1>Not Found</h1>")).build()
     };
     Ok(response)
 }
